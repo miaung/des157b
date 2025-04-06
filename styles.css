@@ -14,6 +14,8 @@ body {
     background-color: #161414;
     color: rgb(255, 255, 255);
     transition: all 2s;
+    padding: 2em;
+    margin: 1em;
 }
 
 body.switch {
@@ -27,12 +29,11 @@ body.switch {
     max-width: 1366px;
     /* make sure the columns don't get too small and text stays readable */
     min-width: 250px;
-    padding: 2em;
 }
 
-header {
+/* header {
     margin: 1em auto;
-}
+} */
 
 main {
     display: flex;
@@ -43,7 +44,6 @@ main {
 
 main section {
     flex: 1;
-    /* margin: 0 .25em; */
 }
 
 a {
@@ -130,8 +130,17 @@ p {
     font-style: normal; 
 }
 
+footer{
+    text-align: right;
+}
+
 @media only screen and (min-width: 650px) {
-   main {
+   body {
+    padding: 3em;
+    margin: 3em;
+   }
+
+    main {
     display: flex;
     flex-direction: row;
     gap: 40px;
@@ -160,36 +169,28 @@ p {
         font-size: 3em;
     }
 
-    #container {
-        padding: 3em;
-    }
-
     #bio {
         max-width: 300px;
         min-width: 250px;
     }
 
     #assignments {
-        max-width: 400px;
-        min-width: 300px;
-    }
-    
-    header {
-        margin: 3em auto;
+        max-width: 300px;
+        min-width: 250px;
     }
 }
 
 @media only screen and (min-width: 960px) {
+    body {
+        padding: 5em;
+    }
+    
     main {
         gap: 100px;
     }
 
     h1 {
         font-size: 5em;
-    }
-
-    #container {
-        padding: 5em;
     }
 
     #bio{
