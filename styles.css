@@ -34,50 +34,25 @@ header {
     margin: 1em auto;
 }
 
-/* #banner {
-    position: relative;
-    display: flex;
-    width: 1100px;
-    height: 250px;
-    margin: auto;
-    background-color: rgb(235, 235, 235);
-    color: #161414;
-    overflow: hidden;
-    display: grid;
-	place-items: center;
-}
-
-#banner.switch {
-    background-color: #161414;
-    color: rgb(235, 235, 235);
-    transition: all 2s;
-} */
-
 main {
     display: flex;
     justify-content: space-evenly;
-    margin: 1em auto;
+    /* margin: 1em auto; */
     flex-direction: column;
 }
 
 main section {
     flex: 1;
-    margin: 0 .25em;
+    /* margin: 0 .25em; */
 }
 
 a {
     text-decoration: none;
 }
 
-nav ul {
-    /*list-style-type: none;*/
-    margin-left: 0;
-    padding-left: 0;
-}
-
-section li {
-    padding-left: 1em;
-}
+/* section li {
+    padding-left: .5em;
+} */
 
 section a {
     line-height: 1em;
@@ -159,7 +134,7 @@ p {
    main {
     display: flex;
     flex-direction: row;
-    gap: 80px;
+    gap: 40px;
    }
 
    #bio {
@@ -182,15 +157,49 @@ p {
     }
 
     h1 {
-        font-size: 5em;
+        font-size: 3em;
     }
 
+    #container {
+        padding: 3em;
+    }
+
+    #bio {
+        max-width: 300px;
+        min-width: 250px;
+    }
+
+    #assignments {
+        max-width: 400px;
+        min-width: 300px;
+    }
+    
+    header {
+        margin: 3em auto;
+    }
 }
 
 @media only screen and (min-width: 960px) {
-    /* #content {  */
-        /* gets the whole content element in a row. */
-        /* display: flex;
-        flex-direction: row;
-    } */
+    main {
+        gap: 100px;
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+
+    #container {
+        padding: 5em;
+    }
+
+    #bio{
+        max-width: 500px;
+        min-width: 450px;
+    }
+
+
+    #assignments {
+        max-width: 1000px;
+        min-width: 450px;
+    }
 }
