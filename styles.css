@@ -40,6 +40,7 @@ main {
     justify-content: space-evenly;
     /* margin: 1em auto; */
     flex-direction: column;
+    margin-top: 30px;
 }
 
 main section {
@@ -110,6 +111,12 @@ h1 {
     font-weight: 600;
     font-style: normal;
     font-size: 2em;
+    margin-top: 0px;
+    display: inline;
+}
+
+.last {
+    font-size: 2.5em;
 }
 
 h2{
@@ -132,6 +139,7 @@ p {
 
 footer{
     text-align: right;
+    margin-top: 80px;
 }
 
 @media only screen and (min-width: 650px) {
@@ -169,6 +177,10 @@ footer{
         font-size: 3em;
     }
 
+    .last {
+        font-size: 3.5em;
+    }
+
     #bio {
         max-width: 300px;
         min-width: 250px;
@@ -182,7 +194,7 @@ footer{
 
 @media only screen and (min-width: 960px) {
     body {
-        padding: 5em;  
+        padding: 4em;  
     }
     main {
         gap: 100px;
@@ -192,25 +204,31 @@ footer{
         font-size: 5em;
     }
 
+    .last {
+        font-size: 6em;
+    }
+
     #bio{
         max-width: 400px;
         min-width: 350px;
     }
 
     #assignments {
-        max-width: 1200px;
+        max-width: 800px;
         min-width: 450px;
     }
 
     .toolong{
         display: flex;
-        gap: 36px;
+        gap: 24px;
     }
 
     .left {
         flex: 1;
+        max-width: 300px;
     }
     .right {
-    flex: 1;
+        flex: 1;
+        max-width: 300px;
     }
 }
