@@ -1,0 +1,44 @@
+{
+    "point1" : {
+        "time" : "Monday",
+        "incoming" : 2,
+        "outgoing" : 1,
+        "mood" : "super productive"
+    },
+    "point2" : {
+        "time" : "Tuesday",
+        "incoming" : 2,
+        "outgoing" : 0,
+        "mood" : "super productive"
+    },
+    "point3" : {
+        "time" : "Wednesday",
+        "incoming" : 3,
+        "outgoing" : 4,
+        "mood" : "a bit overwhelmed"
+    },
+    "point4" : {
+        "time" : "Thursday",
+        "incoming" : 0,
+        "outgoing" : 1,
+        "mood" : "super productive"
+    },
+    "point5" : {
+        "time" : "Friday",
+        "incoming" : 2,
+        "outgoing" : 0,
+        "mood" : "super productive"
+    },
+    "point6" : {
+        "time" : "Saturday",
+        "incoming" : 0,
+        "outgoing" : 0,
+        "mood" : "cool as a cucumber"
+    },
+    "point7" : {
+        "time" : "Sunday",
+        "incoming" : 7,
+        "outgoing" : 0,
+        "mood" : "a bit overwhelmed"
+    }
+}
