@@ -1,13 +1,21 @@
 h1{
-    font-family: "Poppins", sans-serif;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
 }
 
 p {
-    font-family: "Poppins", sans-serif;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+}
+
+html{
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 body {
@@ -19,7 +27,7 @@ body {
     text-align: center;
     padding: 20px;
     margin: 0;
-    background-color: rgb(247, 217, 246);
+    /* background-color: rgb(247, 217, 246); */
     color: #242324;
 }
 
@@ -30,7 +38,8 @@ label {
 }
 
 #picker {
-    font-family: "Poppins", sans-serif;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     padding: 5px 10px;
@@ -41,11 +50,12 @@ label {
     color: #333;
     cursor: pointer;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px;
 }
 
 #picker:focus {
-    border-color: #0077ff;
-    box-shadow: 0 0 0 3px rgba(0, 119, 255, 0.2);
+    border-color: #d0b1e7;
+    box-shadow: 0 0 0 3px rgba(165, 109, 220, 0.2);
     outline: none;
 }
 
@@ -56,10 +66,14 @@ option {
 }
 
 #result {
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 1.1rem;
     background-color: white;
-    max-width:400px;
-    padding: 10px 20px 10px 20px;
+    max-width:500px;
+    padding: 8px 16px 8px 16px;
     border-radius: 20px;
+}
+
+#chat{
+    margin-left: 200px;
 }
