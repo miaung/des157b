@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Liberty</title>
+
+    <!-- Normalize CSS for browser compatability -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Add link to any google fonts used here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <!--/ /-------- Site Styling --------/ /-->
+    <link href="styles.css" rel="stylesheet">    
+
+    <script src="https://kit.fontawesome.com/46dbb1a64b.js" crossorigin="anonymous"></script>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+</head>
+<body>
+    <main>
+        <div class="loadingScreen">
+            <div class="lds-heart">
+                <div>
+
+                </div>
+            </div>
+        </div>
+    
+        <div id="body">
+            <img src="images/body.png" height="400" width="300" alt="doll">
+        </div>
+    
+        <div id="shoes" class="draggable" class="ui-widget-content">
+            <img src="images/shoes.png" height="109" width="300" alt="rotary phone">
+        </div>
+    
+        <div id="dress" class="draggable" class="ui-widget-content">
+            <img src="images/dress.png" height="222" width="300" alt="rotary phone">
+        </div>
+    
+        <div id="bow" class="draggable" class="ui-widget-content">
+            <img src="images/bow.png" height="109" width="300" alt="rotary phone">
+        </div>
+    </main>
+
+    <footer>
+        <p>Libraries Used: <a href="https://loading.io/css/">Pure CSS Loaders</a> and <a href="https://jqueryui.com/draggable/">JQuery Draggable</a></p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
