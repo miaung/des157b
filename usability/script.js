@@ -28,7 +28,7 @@ gsap.timeline({
 // other paragraphs
 
 document.querySelectorAll('.fade-text').forEach(el => {
-  const tl = gsap.timeline({
+const tl = gsap.timeline({
     scrollTrigger: {
       trigger: el,
       start: "top center",
@@ -50,15 +50,15 @@ document.querySelectorAll('.fade-slider').forEach(el => {
   ({
     scrollTrigger: {
       trigger: el,
-      start: "top center",
-      end: "bottom center", 
+      start: "30% center",
+      end: "+=800", 
       scrub: true,
-      pin: true
+      pin: true,
+      pinSpacing: false
     }
   });
 
-  tl.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 1 })
-    .to(el, { opacity: 1, duration: 1 }, "+=0.3");  
+  tl.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 1 });  
 });
 
 // slider

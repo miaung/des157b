@@ -1,0 +1,26 @@
+body {
+  background-color: #161414;
+}
+
+main {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin: 50px 50px 50px 50px;
+    padding: 40px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.left {
+    width: 200px;
+    flex: 1;
+}
+
+.right {
+    width: 400px;
+    flex: 2;
+}
