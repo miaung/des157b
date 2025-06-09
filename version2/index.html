@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Version 2</title>
+
+    <!-- Normalize CSS for browser compatability -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Add link to any google fonts used here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- My Styles -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Meta tag for mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <!-- ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <!-- SplitText -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+
+    <!-- My Script -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <h3 class="fade-combo">
+            <span class="phrase-1">Your privacy is protected</span>
+            <span class="phrase-2">... kind of.</span>
+        </h3>
+        <h3 class="fade-text">
+            The Health Insurance Portability and Accountability Act (HIPAA) protects your health records.
+        </h3>
+        <h3 class="fade-text">
+            The Gramm-Leach-Bliley Act (GLBA) safeguards your sensitive financial data.
+        </h3>
+        <h3 class="fade-text">
+            The California Consumer Privacy Act (CCPA) gives residents some say over their personal data.
+        </h3>
+        <h3 class="fade-text">
+            But currently, in the U.S., there's no single, comprehensive national privacy law.
+        </h3>
+        <h3 class="fade-text">
+            Our current laws don't stop companies from collecting, selling, or sharing your data.
+        </h3>
+        <h3 class="fade-text">
+            That means your clicks. Your purchases. Your movements. Your data.
+        </h3>
+        <h3 class="fade-text">
+            Companies profit from your digital footprint.
+        </h3>
+        <h3 class="fade-text">
+            You just don't get a cut.
+        </h3>
+        <h3 class="fade-text">
+            So what if you could?
+        </h3>
+        <h3 class="fade-text">
+            What if your privacy could be monetized?
+        </h3>
+        <div class="fade-slider">
+            <h3>A future... where your data has value.</h3>
+            <p>Move the slider to find out how this could impact you.</p>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </div>
+                <datalist id="markers">
+                    <option value="0" label="Private"></option>
+                    <option value="25" label="Mostly Private"></option>
+                    <option value="50" label="Balanced"></option>
+                    <option value="75" label="Little Privacy"></option>
+                    <option value="100" label="No Privacy"></option>
+                </datalist>
+        </div>
+    </main>
+</body>
+</html>

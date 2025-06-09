@@ -44,12 +44,11 @@ const tl = gsap.timeline({
 // slider fade in
 
 document.querySelectorAll('.fade-slider').forEach(el => {
-  const tl = gsap.timeline
-  ({
+  const tl = gsap.timeline({
     scrollTrigger: {
       trigger: el,
       start: "30% center",
-      end: "+=800", 
+      end: "+=300", 
       scrub: true,
       pin: true,
       pinSpacing: false
