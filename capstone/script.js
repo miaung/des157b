@@ -39,7 +39,6 @@ const tl = gsap.timeline({
     .to(el, { opacity: 0, duration: 1 }, "+=0.3"); 
 });
 
-
 // slider fade in
 document.querySelectorAll('.fade-slider').forEach(el => {
   const tl = gsap.timeline({
@@ -67,20 +66,20 @@ function updateOutcome() {
 
   // Change image and text based on the slider value
   if (sliderValue == 0) {
-    outcomeImage.src = "path/to/your/image1.jpg"; // Replace with your actual image path
-    outcomeText.textContent = "Your data is highly protected.";
+    outcomeImage.src = "images/outcome0.jpg"; 
+    outcomeText.textContent = "Your data is protected and secure with total control and privacy, but at the cost of missing out on personalized experiences and benefits.";
   } else if (sliderValue == 25) {
-    outcomeImage.src = "path/to/your/image2.jpg"; // Replace with your actual image path
-    outcomeText.textContent = "Mostly private, but some data is shared.";
+    outcomeImage.src = "images/outcome25.jpg"; 
+    outcomeText.textContent = "You selectively share data for personalized experiences and some benefits, while still maintaining control over most of your personal data.";
   } else if (sliderValue == 50) {
-    outcomeImage.src = "path/to/your/image3.jpg"; // Replace with your actual image path
-    outcomeText.textContent = "Balanced privacy and data sharing.";
+    outcomeImage.src = "images/outcome50.jpg"; 
+    outcomeText.textContent = "You balance privacy with sharing some data for personalized services and benefits, but are in some control over your information.";
   } else if (sliderValue == 75) {
-    outcomeImage.src = "path/to/your/image4.jpg"; // Replace with your actual image path
-    outcomeText.textContent = "Little privacy, most of your data is sold.";
+    outcomeImage.src = "images/outcome75.jpg"; 
+    outcomeText.textContent = "You trade most of your privacy for financial bonuses and personalized services, but with limited control over your data and risk of misuse.";
   } else if (sliderValue == 100) {
-    outcomeImage.src = "path/to/your/image5.jpg"; // Replace with your actual image path
-    outcomeText.textContent = "No privacy left, your data is fully monetized.";
+    outcomeImage.src = "images/outcome100.jpg"; 
+    outcomeText.textContent = "You fully monetize your data, receiving a competitive salary and housing, but at the cost of having every action and movement exploited.";
   }
 }
 
